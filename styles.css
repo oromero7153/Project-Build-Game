@@ -1,0 +1,12 @@
+body {
+    background-image: url('Assets/8bitBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainTitle {
+    color: #e0b314;
+    font-family: 'Tilt Prism', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 225%;
+}
