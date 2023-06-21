@@ -2,11 +2,21 @@ body {
     background-image: url('Assets/8bitBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #663a31;
 }
 
 #mainTitle {
-    color: #e0b314;
+    color: #000000;
     font-family: 'Tilt Prism', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     font-size: 225%;
+}
+
+#player1Choices {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-align: center;
 }
