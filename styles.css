@@ -12,11 +12,28 @@ body {
     font-size: 225%;
 }
 
-#player1Choices {
+#player1Choices{
+    font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     left: 50%;
     bottom: 20px;
     transform: translate(-50%, -50%);
     margin: 0 auto;
     text-align: center;
+    color: antiquewhite;
+}
+#gameParameters{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    font-size: 100%;
+}
+
+#princess, #knight, #dragon, #fight{
+    background-color: #000;
+    padding: 10px;
+    color: antiquewhite;
+    border-radius: 55px;
+}
+#fight{
+    margin-top: 5px;
 }
