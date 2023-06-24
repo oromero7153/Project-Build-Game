@@ -37,3 +37,8 @@ body {
 #fight{
     margin-top: 5px;
 }
+#characters{
+    position: fixed;
+    left: 400px;
+    bottom: 350px;
+}
