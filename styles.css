@@ -42,3 +42,14 @@ body {
     left: 400px;
     bottom: 350px;
 }
+.hidden{
+    display: none;
+}
+.visble{
+    display: block;
+}
+#dragonFacingRight, #knightRight, #princessRight{
+  position: fixed;
+  left: 30%;
+  bottom: 40%;  
+}
