@@ -26,9 +26,15 @@ princessButton.addEventListener("click", () => {
 
 
 //need code that will finalize the players choice when they click the submit button and trigger the mathrandom function to generate the computer's choice.
-// let playerChoice = 
-// let computerChoice = Math.random()
-
+// let playerSelection = 
+// let computerSelection = Math.random();
+  if (computerSelection < 0.34) {
+	computerSelection = "dragon";
+  } else if(computerSelection <= 0.67) {
+	computerSelection = "knight";
+  } else {
+	computerSelection = "princess";
+  } 
 // const gamePlay = () => {
 //     const dragonButton = document.getElementById("dragon");
 //     const knightButton = document.getElementById("knight");
