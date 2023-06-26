@@ -26,10 +26,14 @@ princessButton.addEventListener("click", () => {
 
 
 //need code that will finalize the players choice when they click the submit button and trigger the mathrandom function to generate the computer's choice.
+// let playerChoice = 
+// let computerChoice = Math.random()
 
-
-//need a function that will generate the "rock, paper, scissors"
-
+// const gamePlay = () => {
+//     const dragonButton = document.getElementById("dragon");
+//     const knightButton = document.getElementById("knight");
+//     const princessButton = document.getElementById("princess");
+//     const playerOptions = [dragonButton, knightButton, princessButton];
 
 //after mathrandom functions triggers, the  'winning' character will animate 
 
