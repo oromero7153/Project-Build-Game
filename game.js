@@ -51,11 +51,11 @@ function test(){
 };
 //the function that compares the choices
 function result(){
-    if(player1===computer){
+    if(player1===computerPick){
         return "The result is a tie!";
     }
     else if(player1==="dragon"){
-        if(computer==="princess"){
+        if(computerPick==="princess"){
             return "Player 1 Wins!"
         }
         else if(player1==="knight"){
@@ -63,7 +63,7 @@ function result(){
         }
     }
     else if(player1==="princess"){
-        if(computer==="knight"){
+        if(computerPick==="knight"){
             return "Player 1 Wins"
         }
         else if(player1==="dragon"){
@@ -71,10 +71,10 @@ function result(){
         }
     }
     else if(player1==="knight"){
-        if(computer==="dragon"){
+        if(computerPick==="dragon"){
             return "Player 1 Wins"
         }
-        else if(computer==="princess"){
+        else if(computerPick==="princess"){
             return "The Computer Wins";
         }
     }    
