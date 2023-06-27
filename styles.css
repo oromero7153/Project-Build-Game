@@ -50,7 +50,7 @@ body {
 }
 #dragonFacingRight, #knightRight, #princessRight{
   position: fixed;
-  left: 30%;
+  left: 20%;
   bottom: 35%;  
 }
 #knightRight{

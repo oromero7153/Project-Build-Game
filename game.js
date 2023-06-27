@@ -1,4 +1,6 @@
 // code that will populate a character when the player clicks on the buttons. 
+let player;
+let computer;
 
 const dragonButton = document.getElementById("dragon");
 const dragonRight = document.getElementById("dragonFacingRight");
@@ -27,18 +29,17 @@ princessButton.addEventListener("click", () => {
 
 //adding click event to buttons in order to play the game
 
-function test(){
-    const buttons = document.querySelectorAll(".buttons")
-        let player1;
-        let computer;
+    const buttons = document.querySelectorAll(".buttons");
+
 
     buttons.forEach(button => button.addEventListener("click", () => {
-        player1 = button.textContent;
+        player = button.textContent;
         computerPick();
         result();
-    } ))
-} console.log(test())
+    })); 
+
 //the function that runs the math random for the computer pick
+
     function computerPick(){
     let computer = Math.random();
       if (computer < 0.34) {
@@ -48,39 +49,38 @@ function test(){
          } else {
     computer = "princess";
     }
-};
+}; 
+
 //the function that compares the choices
-function result(){
-    if(player1===computerPick){
+
+function result(){ 
+    if(player===computerPick){
         return "The result is a tie!";
     }
-    else if(player1==="dragon"){
+    else if(player==="Dragon"){
         if(computerPick==="princess"){
             return "Player 1 Wins!"
         }
-        else if(player1==="knight"){
+        else if(player==="Knight"){
             return "The Computer Wins";
         }
     }
-    else if(player1==="princess"){
+    else if(player==="Princess"){
         if(computerPick==="knight"){
             return "Player 1 Wins"
         }
-        else if(player1==="dragon"){
+        else if(player==="Dragon"){
             return "The Computer Wins";
         }
     }
-    else if(player1==="knight"){
+    else if(player==="Knight"){
         if(computerPick==="dragon"){
             return "Player 1 Wins"
         }
         else if(computerPick==="princess"){
             return "The Computer Wins";
         }
-    }    
+    }
 }
-//console.log(test())
- 
-
 
 // function that triggers winning player with phrase that says "... wins!"
