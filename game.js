@@ -29,58 +29,70 @@ princessButton.addEventListener("click", () => {
 
 //adding click event to buttons in order to play the game
 
-    const buttons = document.querySelectorAll(".buttons");
+const buttons = document.querySelectorAll(".buttons");
 
 
-    buttons.forEach(button => button.addEventListener("click", () => {
+buttons.forEach(button => 
+    button.addEventListener("click", () => {
         player = button.textContent;
         computerPick();
         result();
     })); 
 
+    // function to generate computer image
+// const dragonFacingLeft = document.getElementById("#dragonFacingLeft");
+// const knightLeft = document.getElementById("#knightLeft");
+// const princessLeft = document.getElementById("#princessLeft");
+ 
+
 //the function that runs the math random for the computer pick
 
     function computerPick(){
-    let computer = Math.random();
-      if (computer < 0.34) {
-    computer = "dragon";
-         } else if (computer <= 0.67) {
-    computer = "knight";
-         } else {
-    computer = "princess";
-    }
-}; 
+        let random = Math.random();
+        if (random < 0.34) {
+          computer = "Dragon";
+        //   dragonFacingLeft.style.display;
+        } else if (random <= 0.67) {
+          computer = "Knight";
+          knightLeft.style.display;
+        } else {
+          computer = "Princess";
+          princessLeft.style.display;
+        }
+        console.log("Computer: ", computer);
+      }
 
-//the function that compares the choices
+
+
+//the function that compares the choices and  prodduce winner statement
 
 function result(){ 
-    if(player===computerPick){
-        return "The result is a tie!";
+    if (player === computer) {
+        document.getElementById("result").innerHTML = "The result is a tie!";
+        console.log("Result: The result is a tie!");
+      } else if (player === "Dragon") {
+        if (computer === "Princess") {
+          document.getElementById("result").innerHTML = "Player 1 Wins!";
+          console.log("Result: Player 1 Wins!");
+        } else if (computer === "Knight") {
+          document.getElementById("result").innerHTML = "The Computer Wins";
+          console.log("Result: The Computer Wins");
+        }
+      } else if (player === "Princess") {
+        if (computer === "Knight") {
+          document.getElementById("result").innerHTML = "Player 1 Wins";
+          console.log("Result: Player 1 Wins");
+        } else if (computer === "Dragon") {
+          document.getElementById("result").innerHTML = "The Computer Wins";
+          console.log("Result: The Computer Wins");
+        }
+      } else if (player === "Knight") {
+        if (computer === "Dragon") {
+          document.getElementById("result").innerHTML = "Player 1 Wins";
+          console.log("Result: Player 1 Wins");
+        } else if (computer === "Princess") {
+          document.getElementById("result").innerHTML = "The Computer Wins";
+          console.log("Result: The Computer Wins");
+        }
+      }
     }
-    else if(player==="Dragon"){
-        if(computerPick==="princess"){
-            return "Player 1 Wins!"
-        }
-        else if(player==="Knight"){
-            return "The Computer Wins";
-        }
-    }
-    else if(player==="Princess"){
-        if(computerPick==="knight"){
-            return "Player 1 Wins"
-        }
-        else if(player==="Dragon"){
-            return "The Computer Wins";
-        }
-    }
-    else if(player==="Knight"){
-        if(computerPick==="dragon"){
-            return "Player 1 Wins"
-        }
-        else if(computerPick==="princess"){
-            return "The Computer Wins";
-        }
-    }
-}
-
-// function that triggers winning player with phrase that says "... wins!"

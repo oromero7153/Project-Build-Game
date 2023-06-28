@@ -45,6 +45,9 @@ body {
 .hidden{
     display: none;
 }
+.hidden2{
+    display: none;
+}
 .visble{
     display: block;
 }
@@ -53,6 +56,11 @@ body {
   left: 20%;
   bottom: 35%;  
 }
+#dragonFacingLeft, #knightLeft, #princessLeft{
+    position: fixed;
+    right: 20%;
+    bottom: 35%;  
+  }
 #knightRight{
     width:auto;
     height: 150px;
@@ -60,4 +68,7 @@ body {
 #dragonFacingRight{
     width: auto;
     height: 200px;
+}
+p {
+    bottom: 5%;
 }
