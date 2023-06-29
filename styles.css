@@ -63,11 +63,11 @@ p {
     right: 20%;
     bottom: 35%;  
   }
-#knightRight{
+#knightRight, #knightLeft{
     width:auto;
     height: 150px;
 }
-#dragonFacingRight{
+#dragonFacingRight, #dragonFacingLeft{
     width: auto;
     height: 200px;
 }

@@ -46,33 +46,33 @@ function computerPick() {
   let random = Math.random();
   if (random < 0.34) {
     computer = "Dragon";
-    getImage(dragonFacingLeft);
+    dragonComputerImage(dragonFacingLeft);
   } else if (random <= 0.67) {
     computer = "Knight";
-    produceImage(knightLeft);
+    knightComputerImage(knightLeft);
   } else {
     computer = "Princess";
     princessLeft.style.display;
-    generateImage(princessLeft);
+    princessComputerImage(princessLeft);
   }
   console.log("Computer: ", computer);
 }
 // function to generate computer image
-function getImage(dragonFacingLeft){
+function dragonComputerImage(dragonFacingLeft){
   const dragonComputer = document.getElementById("#dragonFacingLeft");
   dragonFacingLeft.style.display ="block";
   princessLeft.style.display ="none";
   knightLeft.style.display ="none";
 };
 
-function produceImage(knightLeft){
+function knightComputerImage(knightLeft){
   const knightComputer = document.getElementById("#knightLeft");
   knightLeft.style.display ="block";
   dragonFacingLeft.style.display ="none";
   princessLeft.style.display ="none";
 };
 
-function generateImage(princessLeft){
+function princessComputerImage(princessLeft){
   const princessComputer = document.getElementById("#princessLeft");
   princessLeft.style.display ="block";
   knightLeft.style.display ="none";
