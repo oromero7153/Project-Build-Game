@@ -1,84 +1,108 @@
- body { 
-    /* background-image: url('Assets/8bitBackground.png'); 
+ body {
+     /* background-image: url('Assets/8bitBackground.png'); 
     background-size: cover;
     background-repeat: no-repeat;*/
-    background-color: #663a31;
-}
-.gameConsole{
-    width:75%;
-    height: 50%;
-    margin: auto;
-    border: 2px solid black;
-}
-#background{
-    width:100%;
-    height: auto;    
-}
-p {
-    bottom: 5%;
-}
-#mainTitle {
-    color: antiquewhite;
-    font-family: 'Tilt Prism', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    font-size: 225%;
-}
+     background-color: #663a31;
+ }
 
-#player1Choices{
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    left: 50%;
-    bottom: 20px;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    text-align: center;
-    color: antiquewhite;
-}
-#gameParameters{
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    font-size: 100%;
-    color:#ffff;
-}
+ .gameConsole {
+     width: 75%;
+     height: 45%;
+     margin: auto;
+     border: 2px solid black;
+     justify-content: center;
+ }
 
-#princess, #knight, #dragon, #fight{
-    background-color: #000;
-    padding: 10px;
-    color: antiquewhite;
-    border-radius: 55px;
-}
-#fight{
-    margin-top: 5px;
-}
-#characters{
-    position: fixed;
-    left: 400px;
-    bottom: 350px;
-}
-.hidden{
-    display: none;
-}
-.hidden2{
-    display: none;
-}
-.visble{
-    display: block;
-}
-#dragonFacingRight, #knightRight, #princessRight{
-  position: fixed;
-  left: 20%;
-  bottom: 35%;  
-}
-#dragonFacingLeft, #knightLeft, #princessLeft{
-    position: fixed;
-    right: 20%;
-    bottom: 35%;  
-  }
-#knightRight, #knightLeft{
-    width:auto;
-    height: 150px;
-}
-#dragonFacingRight, #dragonFacingLeft{
-    width: auto;
-    height: 200px;
-}
+ #background {
+     width: 100%;
+     height: auto;
+ }
+
+ p {
+     bottom: 5%;
+ }
+
+ #mainTitle {
+     color: antiquewhite;
+     font-family: 'Tilt Prism', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     text-align: center;
+     font-size: 225%;
+ }
+
+ #player1Choices {
+     font-family: Arial, Helvetica, sans-serif;
+     position: relative;
+     left: 50%;
+     bottom: 20px;
+     transform: translate(-50%, -50%);
+     margin: 0 auto;
+     text-align: center;
+     color: antiquewhite;
+ }
+
+ #gameParameters {
+     font-family: Arial, Helvetica, sans-serif;
+     position: relative;
+     font-size: 100%;
+     color: #ffff;
+ }
+
+ #princess,
+ #knight,
+ #dragon,
+ #fight {
+     background-color: #000;
+     padding: 10px;
+     color: antiquewhite;
+     border-radius: 55px;
+ }
+
+ #fight {
+     margin-top: 5px;
+ }
+
+ .characters {
+     display: flex;
+     flex-flow: row;
+     border: 1px solid cyan;
+     position: relative;
+   justify-content: space-around;
+ }
+
+ .hidden {
+     display: none;
+ }
+
+ .hidden2 {
+     display: none;
+ }
+
+ .visble {
+     display: block;
+ }
+
+ /* #dragonFacingRight,
+ #knightRight,
+ #princessRight {
+     left: 20%;
+     bottom: 35%;
+ }
+
+ #dragonFacingLeft,
+ #knightLeft,
+ #princessLeft {
+     right: 20%;
+     bottom: 35%;
+ } */
+
+ /* #knightRight,
+ #knightLeft {
+     width: auto;
+     height: 150px;
+ }
+
+ #dragonFacingRight,
+ #dragonFacingLeft {
+     width: auto;
+     height: 200px;
+ } */
