@@ -4,7 +4,9 @@ body {
     background-repeat: no-repeat;
     background-color: #663a31;
 }
-
+p {
+    bottom: 5%;
+}
 #mainTitle {
     color: #000000;
     font-family: 'Tilt Prism', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -68,7 +70,4 @@ body {
 #dragonFacingRight{
     width: auto;
     height: 200px;
-}
-p {
-    bottom: 5%;
 }
