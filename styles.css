@@ -64,13 +64,20 @@
  .hidden {
      display: none;
  }
-@media screen and (max-width: 750px) {
-    #dragonFacingRight, #knightRight, #princessRight{
-    height: 75px;
-    width: auto;
-    }
-    #dragonFacingLeft, #knightLeft, #princessLeft{
-        height: 75px;
-        width: auto;
-        }
-}
+
+ @media screen and (max-width: 750px) {
+
+     #dragonFacingRight,
+     #knightRight,
+     #princessRight {
+         height: 75px;
+         width: auto;
+     }
+
+     #dragonFacingLeft,
+     #knightLeft,
+     #princessLeft {
+         height: 75px;
+         width: auto;
+     }
+ }
