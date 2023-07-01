@@ -1,7 +1,7 @@
-// code that will populate a character when the player clicks on the buttons. 
 let player;
 let computer;
 
+// code that will populate a character when the player clicks on the buttons. 
 const dragonButton = document.getElementById("dragon");
 const dragonRight = document.getElementById("dragonFacingRight");
 dragonButton.addEventListener("click", () => {
@@ -40,7 +40,7 @@ buttons.forEach(button =>
   }));
 
 
-//the function that runs the math random for the computer pick
+//the function that runs the math random method for the computer pick
 
 function computerPick() {
   let random = Math.random();
@@ -57,6 +57,8 @@ function computerPick() {
   }
   console.log("Computer: ", computer);
 }
+
+
 // function to generate computer image
 function dragonComputerImage(dragonFacingLeft) {
   const dragonComputer = document.getElementById("#dragonFacingLeft");

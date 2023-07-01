@@ -64,7 +64,7 @@
  .hidden {
      display: none;
  }
-
+/* media query to adjust the character size based on browser size */
  @media screen and (max-width: 750px) {
 
      #dragonFacingRight,
