@@ -58,25 +58,25 @@ function computerPick() {
   console.log("Computer: ", computer);
 }
 // function to generate computer image
-function dragonComputerImage(dragonFacingLeft){
+function dragonComputerImage(dragonFacingLeft) {
   const dragonComputer = document.getElementById("#dragonFacingLeft");
-  dragonFacingLeft.style.display ="block";
-  princessLeft.style.display ="none";
-  knightLeft.style.display ="none";
+  dragonFacingLeft.style.display = "block";
+  princessLeft.style.display = "none";
+  knightLeft.style.display = "none";
 };
 
-function knightComputerImage(knightLeft){
+function knightComputerImage(knightLeft) {
   const knightComputer = document.getElementById("#knightLeft");
-  knightLeft.style.display ="block";
-  dragonFacingLeft.style.display ="none";
-  princessLeft.style.display ="none";
+  knightLeft.style.display = "block";
+  dragonFacingLeft.style.display = "none";
+  princessLeft.style.display = "none";
 };
 
-function princessComputerImage(princessLeft){
+function princessComputerImage(princessLeft) {
   const princessComputer = document.getElementById("#princessLeft");
-  princessLeft.style.display ="block";
-  knightLeft.style.display ="none";
-  dragonFacingLeft.style.display ="none";
+  princessLeft.style.display = "block";
+  knightLeft.style.display = "none";
+  dragonFacingLeft.style.display = "none";
 };
 
 

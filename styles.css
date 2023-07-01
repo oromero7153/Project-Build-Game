@@ -14,11 +14,12 @@
      border: 2px solid black;
      justify-content: center;
  }
+
  .characters {
-    border: 1px solid cyan;
-    position: absolute;
-    grid-area: 3/3/2/4;
-}
+     border: 1px solid cyan;
+     grid-area: 2/2;
+     display: inline-flex;
+ }
 
  #background {
      width: 100%;
@@ -42,7 +43,7 @@
      margin: 0 auto;
      text-align: center;
      color: antiquewhite;
-     
+
  }
 
  #gameParameters {
@@ -50,6 +51,7 @@
      position: relative;
      font-size: 100%;
      color: #ffff;
+     margin-left: 10%;
  }
 
  #princess,
@@ -70,11 +72,12 @@
  }
 
 
- #dragonFacingRight,
+/* #dragonFacingRight,
  #knightRight,
  #princessRight {
      left: 20%;
      bottom: 35%;
+     
  }
 
  #dragonFacingLeft,
@@ -83,15 +86,3 @@
      right: 20%;
      bottom: 35%;
  }
-
- /* #knightRight,
- #knightLeft {
-     width: auto;
-     height: 150px;
- }
-
- #dragonFacingRight,
- #dragonFacingLeft {
-     width: auto;
-     height: 200px;
- } */
