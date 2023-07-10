@@ -52,7 +52,6 @@ function computerPick() {
     knightComputerImage(knightLeft);
   } else {
     computer = "Princess";
-    princessLeft.style.display;
     princessComputerImage(princessLeft);
   }
   console.log("Computer: ", computer);
