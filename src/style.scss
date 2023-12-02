@@ -1,0 +1,15 @@
+$text-color: antiquewhite;
+$button_color: black;
+$font: Arial, Helvetica, sans-serif;
+$body-color:#663a31;
+
+body{
+    background-color: $body-color;
+}
+
+.gameConsole{
+    display:grid;
+    width: 75%;
+    height:45;
+    
+}
