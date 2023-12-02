@@ -1,0 +1,77 @@
+$text-color: antiquewhite;
+$button_color: black;
+$font: Arial, Helvetica, sans-serif;
+$body-color:#663a31;
+$center: center;
+$hover: grey;
+
+body{
+    background-color: $body-color;
+}
+
+.gameConsole{
+    display:grid;
+    width: 75%;
+    height:45;
+    margin: auto;
+    border: 2px solid $button_color;
+    justify-content: $center;
+}
+
+.player {
+    grid-area: 4/2;
+}
+
+.computer {
+    grid-area: 4/4;
+}
+
+#background {
+    width: 100%;
+    height: auto;
+    grid-area: 1 / 1 / 6/ 6;
+}
+
+p {
+    bottom: 5%;
+}
+
+#mainTitle {
+    color: $text-color;
+    font-family: $font;
+    text-align: $center;
+    font-size: 40px;
+}
+
+#player1Choices {
+    font-family: $font;
+    margin: 0 auto;
+    text-align: $center;
+    color: $text-color;
+
+}
+
+#gameParameters {
+    font-family: $font;
+    position: sticky;
+    font-size: 100%;
+    color: $text-color;
+    margin-left: 10%;
+}
+
+.buttons{
+    background-color: $button_color;
+    padding: 10px;
+    color: $text-color;
+    border-radius: 55px;
+    &:hover{
+    background-color: $hover;
+    padding: 10px;
+    color: $text-color;
+    border-radius: 55px;
+    }
+}
+
+.hidden {
+    display: none;
+}

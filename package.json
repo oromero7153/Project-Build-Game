@@ -1,0 +1,15 @@
+{
+  "name": "project-build-game",
+  "version": "1.0.0",
+  "description": "Princess, Knight, Dragon This game is a variation of Rock, Paper, Scissors but more dynamic with characters populating the browser.",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
