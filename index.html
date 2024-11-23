@@ -1,62 +1,98 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Princess, Knight, Dragon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- added external CSS file -->
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- added google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <h1 id="mainTitle">Princess, Knight, Dragon</h1>
     <div id="gameParameters">
-        <ul>
-            <li>Princess beats Knight</li>
-            <li>Dragon beats Princess</li>
-            <li>Knight beats Dragon</li>
-        </ul>
+      <ul>
+        <li>Princess beats Knight</li>
+        <li>Dragon beats Princess</li>
+        <li>Knight beats Dragon</li>
+      </ul>
+    </div>
+    <div id="gameScore">
+      <ul>
+        <li id="wins">Wins =</li>
+        <li id="loss">Loss =</li>
+        <li id="ties">Tie =</li>
+      </ul>
     </div>
     <!-- the box that contains the game and characters -->
     <div class="gameConsole">
-        <img src="./Assets/forest.jpeg" alt="8bit gaming forest by PixelChoice via Adobe Stock" id="background">
-        <div class="player">
-            <!-- player 1 character -->
-            <img id="dragonFacingRight" src="./Assets/flyingDragonRight.gif" class="hidden"
-                alt="Flying Gold Dragon by AntumDeluge via OpenArtGame.org ">
-            <img id="knightRight" src="./Assets/knight-right.gif" class="hidden"
-                alt="Black Knight by Merry Dream Games via OpenArtGame.org">
-            <img id="princessRight" src="./Assets/princess-right.gif" class="hidden"
-                alt="Princess by Cabbit via OpenArtGame.org">
-        </div>
-        <!-- computer character -->
-        <div class="computer">
-            <img id="dragonFacingLeft" src="./Assets/flyingDragonLeft.gif" class="hidden"
-                alt="Flying Gold Dragon by AntumDeluge via OpenArtGame.org ">
-            <img id="knightLeft" src="./Assets/knight-left.gif" class="hidden"
-                alt="Black Knight by Merry Dream Games via OpenArtGame.org">
-            <img id="princessLeft" src="./Assets/princess-left.gif" class="hidden"
-                alt="Princess by Cabbit via OpenArtGame.org">
-        </div>
+      <img
+        src="./Assets/forest.jpeg"
+        alt="8bit gaming forest by PixelChoice via Adobe Stock"
+        id="background"
+      />
+      <div class="player">
+        <!-- player 1 character -->
+        <img
+          id="dragonFacingRight"
+          src="./Assets/flyingDragonRight.gif"
+          class="hidden"
+          alt="Flying Gold Dragon by AntumDeluge via OpenArtGame.org "
+        />
+        <img
+          id="knightRight"
+          src="./Assets/knight-right.gif"
+          class="hidden"
+          alt="Black Knight by Merry Dream Games via OpenArtGame.org"
+        />
+        <img
+          id="princessRight"
+          src="./Assets/princess-right.gif"
+          class="hidden"
+          alt="Princess by Cabbit via OpenArtGame.org"
+        />
+      </div>
+      <!-- computer character -->
+      <div class="computer">
+        <img
+          id="dragonFacingLeft"
+          src="./Assets/flyingDragonLeft.gif"
+          class="hidden"
+          alt="Flying Gold Dragon by AntumDeluge via OpenArtGame.org "
+        />
+        <img
+          id="knightLeft"
+          src="./Assets/knight-left.gif"
+          class="hidden"
+          alt="Black Knight by Merry Dream Games via OpenArtGame.org"
+        />
+        <img
+          id="princessLeft"
+          src="./Assets/princess-left.gif"
+          class="hidden"
+          alt="Princess by Cabbit via OpenArtGame.org"
+        />
+      </div>
     </div>
     <div id="player1Choices">
-        <!-- game buttons -->
-        <h2>Player 1, make your choice!</h2>
-        <div>
-            <button class="buttons" id="princess"><a>Princess</a></button>
-            <button class="buttons" id="knight"><a>Knight</a></button>
-            <button class="buttons" id="dragon"><a>Dragon</a></button>
-        </div>
-        <div>
-            <p id="result">Result!</p>
-        </div>
+      <!-- game buttons -->
+      <h2>Player 1, make your choice!</h2>
+      <div>
+        <button class="buttons" id="princess"><a>Princess</a></button>
+        <button class="buttons" id="knight"><a>Knight</a></button>
+        <button class="buttons" id="dragon"><a>Dragon</a></button>
+      </div>
+      <div>
+        <p id="result">Result!</p>
+      </div>
     </div>
     <!-- added external JS file -->
     <script src="./game.js"></script>
-</body>
-
+  </body>
 </html>
