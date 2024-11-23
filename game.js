@@ -77,7 +77,7 @@ function princessComputerImage(princessLeft) {
   dragonFacingLeft.style.display = "none";
 }
 
-//the function that compares the choices and  prodduce winner statement
+//Game Logic: the function that compares the choices and  prodduce winner statement
 
 let displayResult = function (message) {
   document.getElementById("result").innerHTML = message;
