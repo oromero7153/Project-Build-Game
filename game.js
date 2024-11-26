@@ -84,27 +84,43 @@ let displayResult = function (message) {
 };
 let player1Wins = "Player 1 wins!";
 let computerWins = "The Computer wins!";
-
+let ties = 0;
+let wins = 0;
+let loss = 0;
 function result() {
   if (player === computer) {
     displayResult("The result is a tie!");
+    ties++;
+    document.querySelector(".ties").textContent = ties;
   } else if (player === "Dragon") {
     if (computer === "Princess") {
       displayResult(player1Wins);
+      wins++;
+      document.querySelector(".wins").textContent = wins;
     } else if (computer === "Knight") {
       displayResult(computerWins);
+      loss++;
+      document.querySelector(".losses").textContent = loss;
     }
   } else if (player === "Princess") {
     if (computer === "Knight") {
       displayResult(player1Wins);
+      wins++;
+      document.querySelector(".wins").textContent = wins;
     } else if (computer === "Dragon") {
       displayResult(computerWins);
+      loss++;
+      document.querySelector(".losses").textContent = loss;
     }
   } else if (player === "Knight") {
     if (computer === "Dragon") {
       displayResult(player1Wins);
+      wins++;
+      document.querySelector(".wins").textContent = wins;
     } else if (computer === "Princess") {
       displayResult(computerWins);
+      loss++;
+      document.querySelector(".losses").textContent = loss;
     }
   }
 }
