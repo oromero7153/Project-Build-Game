@@ -1,29 +1,31 @@
 let player;
 let computer;
-
+let characterDisplay = function (image, canYouSeeIt) {
+  image.style.display = canYouSeeIt;
+};
 // code that will populate a character when the player clicks on the buttons.
 const dragonButton = document.getElementById("dragon");
 const dragonRight = document.getElementById("dragonFacingRight");
 dragonButton.addEventListener("click", () => {
-  dragonRight.style.display = "block";
-  knightRight.style.display = "none";
-  princessRight.style.display = "none";
+  characterDisplay(dragonRight, "block");
+  characterDisplay(knightRight, "none");
+  characterDisplay(princessRight, "none");
 });
 
 const knightButton = document.getElementById("knight");
 const knightRight = document.getElementById("knightRight");
 knightButton.addEventListener("click", () => {
-  knightRight.style.display = "block";
-  dragonRight.style.display = "none";
-  princessRight.style.display = "none";
+  characterDisplay(knightRight, "block");
+  characterDisplay(dragonRight, "none");
+  characterDisplay(princessRight, "none");
 });
 
 const princessButton = document.getElementById("princess");
 const princessRight = document.getElementById("princessRight");
 princessButton.addEventListener("click", () => {
-  princessRight.style.display = "block";
-  knightRight.style.display = "none";
-  dragonRight.style.display = "none";
+  characterDisplay(princessRight, "block");
+  characterDisplay(knightRight, "none");
+  characterDisplay(dragonRight, "none");
 });
 
 //adding click event to buttons in order to play the game
