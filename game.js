@@ -60,23 +60,23 @@ function computerPick() {
 // function to generate computer image
 function dragonComputerImage(dragonFacingLeft) {
   const dragonComputer = document.getElementById("#dragonFacingLeft");
-  dragonFacingLeft.style.display = "block";
-  princessLeft.style.display = "none";
-  knightLeft.style.display = "none";
+  characterDisplay(dragonFacingLeft, "block");
+  characterDisplay(knightLeft, "none");
+  characterDisplay(princessLeft, "none");
 }
 
 function knightComputerImage(knightLeft) {
   const knightComputer = document.getElementById("#knightLeft");
-  knightLeft.style.display = "block";
-  dragonFacingLeft.style.display = "none";
-  princessLeft.style.display = "none";
+  characterDisplay(knightLeft, "block");
+  characterDisplay(dragonFacingLeft, "none");
+  characterDisplay(princessLeft, "none");
 }
 
 function princessComputerImage(princessLeft) {
   const princessComputer = document.getElementById("#princessLeft");
-  princessLeft.style.display = "block";
-  knightLeft.style.display = "none";
-  dragonFacingLeft.style.display = "none";
+  characterDisplay(princessLeft, "block");
+  characterDisplay(knightLeft, "none");
+  characterDisplay(dragonFacingLeft, "none");
 }
 
 //Game Logic: the function that compares the choices and  prodduce winner statement
