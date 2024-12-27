@@ -35,8 +35,10 @@ const buttons = document.querySelectorAll(".buttons");
 buttons.forEach((button) =>
   button.addEventListener("click", () => {
     player = button.textContent;
-    computerPick();
-    result();
+    setTimeout(() => {
+      computerPick();
+      result();
+    }, 1000);
   })
 );
 
